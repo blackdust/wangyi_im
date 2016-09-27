@@ -47,11 +47,6 @@
       console.log '收到消息', msg.scene, msg.type, msg
       @pushMsg(msg)
 
-    jQuery.ajax
-      url: "/get_login_in",
-      method: "POST"
-    .success (msg)=>
-
 
     @data = {}
     hash = 
